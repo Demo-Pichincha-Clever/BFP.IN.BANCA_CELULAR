@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SetToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PAD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PIN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetTokenResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Trx" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Length" type="s:short" />
+            <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendMessageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:SetToken" />
+  </wsdl:message>
+  <wsdl:message name="SetTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:SetTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetTokenHttpGetIn">
+    <wsdl:part name="PAD" type="s:string" />
+    <wsdl:part name="PIN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetTokenHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpGetIn">
+    <wsdl:part name="Trx" type="s:string" />
+    <wsdl:part name="Length" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SetTokenHttpPostIn">
+    <wsdl:part name="PAD" type="s:string" />
+    <wsdl:part name="PIN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetTokenHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpPostIn">
+    <wsdl:part name="Trx" type="s:string" />
+    <wsdl:part name="Length" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="SetToken">
+      <wsdl:input message="tns:SetTokenSoapIn" />
+      <wsdl:output message="tns:SetTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageSoapIn" />
+      <wsdl:output message="tns:SendMessageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="SetToken">
+      <wsdl:input message="tns:SetTokenHttpGetIn" />
+      <wsdl:output message="tns:SetTokenHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageHttpGetIn" />
+      <wsdl:output message="tns:SendMessageHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="SetToken">
+      <wsdl:input message="tns:SetTokenHttpPostIn" />
+      <wsdl:output message="tns:SetTokenHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageHttpPostIn" />
+      <wsdl:output message="tns:SendMessageHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetToken">
+      <soap:operation soapAction="http://tempuri.org/SetToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap:operation soapAction="http://tempuri.org/SendMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetToken">
+      <soap12:operation soapAction="http://tempuri.org/SetToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SetToken">
+      <http:operation location="/SetToken" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <http:operation location="/SendMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SetToken">
+      <http:operation location="/SetToken" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <http:operation location="/SendMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://swebsbfpr03:9054/WS.BancaCelular.SIX/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://swebsbfpr03:9054/WS.BancaCelular.SIX/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://swebsbfpr03:9054/WS.BancaCelular.SIX/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://swebsbfpr03:9054/WS.BancaCelular.SIX/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
