@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFP.BancaCelular.WS", "BFP.BancaCelular.WS\BFP.BancaCelular.WS.csproj", "{51765F6D-01B1-4B75-AAFF-0B562C5714CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFP.BancaCelular.Entidad", "BFP.BancaCelular.Entidad\BFP.BancaCelular.Entidad.csproj", "{81E7981F-4A86-4137-AC0C-0423AB839464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFP.BancaCelular.Negocio", "BFP.BancaCelular.Negocio\BFP.BancaCelular.Negocio.csproj", "{C9183517-F713-46E0-9151-98061784B081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFP.BancaCelular.Data", "BFP.BancaCelular.Data\BFP.BancaCelular.Data.csproj", "{0B0CAA07-71E4-4FA5-B9ED-A964D30E012E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFP.BancaCelular.Comun", "BFP.BancaCelular.Comun\BFP.BancaCelular.Comun.csproj", "{2368D086-4655-4D35-9D7F-BDBF73B7C8A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{20E66D1E-FCDD-44F5-B454-F0292A3CEA14}"
+	ProjectSection(ProjectDependencies) = postProject
+		{51765F6D-01B1-4B75-AAFF-0B562C5714CE} = {51765F6D-01B1-4B75-AAFF-0B562C5714CE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServiceProd", "TestServiceProd\TestServiceProd.csproj", "{47DC71B0-BEF7-4438-B7F2-6BF79E84DC24}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 8
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BFP.BancaCelular.Comun\\BFP.BancaCelular.Comun.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = BFP.BancaCelular.Comun\\
+		SccProjectUniqueName2 = BFP.BancaCelular.Data\\BFP.BancaCelular.Data.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = BFP.BancaCelular.Data\\
+		SccProjectUniqueName3 = BFP.BancaCelular.Entidad\\BFP.BancaCelular.Entidad.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = BFP.BancaCelular.Entidad\\
+		SccProjectUniqueName4 = BFP.BancaCelular.Negocio\\BFP.BancaCelular.Negocio.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = BFP.BancaCelular.Negocio\\
+		SccProjectUniqueName5 = BFP.BancaCelular.WS\\BFP.BancaCelular.WS.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = BFP.BancaCelular.WS\\
+		SccProjectUniqueName6 = Test\\Test.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = Test\\
+		SccProjectUniqueName7 = TestServiceProd\\TestServiceProd.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = TestServiceProd\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51765F6D-01B1-4B75-AAFF-0B562C5714CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51765F6D-01B1-4B75-AAFF-0B562C5714CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51765F6D-01B1-4B75-AAFF-0B562C5714CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51765F6D-01B1-4B75-AAFF-0B562C5714CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E7981F-4A86-4137-AC0C-0423AB839464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E7981F-4A86-4137-AC0C-0423AB839464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E7981F-4A86-4137-AC0C-0423AB839464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E7981F-4A86-4137-AC0C-0423AB839464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9183517-F713-46E0-9151-98061784B081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9183517-F713-46E0-9151-98061784B081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9183517-F713-46E0-9151-98061784B081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9183517-F713-46E0-9151-98061784B081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0CAA07-71E4-4FA5-B9ED-A964D30E012E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0CAA07-71E4-4FA5-B9ED-A964D30E012E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0CAA07-71E4-4FA5-B9ED-A964D30E012E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0CAA07-71E4-4FA5-B9ED-A964D30E012E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2368D086-4655-4D35-9D7F-BDBF73B7C8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2368D086-4655-4D35-9D7F-BDBF73B7C8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2368D086-4655-4D35-9D7F-BDBF73B7C8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2368D086-4655-4D35-9D7F-BDBF73B7C8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E66D1E-FCDD-44F5-B454-F0292A3CEA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E66D1E-FCDD-44F5-B454-F0292A3CEA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E66D1E-FCDD-44F5-B454-F0292A3CEA14}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E66D1E-FCDD-44F5-B454-F0292A3CEA14}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{47DC71B0-BEF7-4438-B7F2-6BF79E84DC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DC71B0-BEF7-4438-B7F2-6BF79E84DC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DC71B0-BEF7-4438-B7F2-6BF79E84DC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DC71B0-BEF7-4438-B7F2-6BF79E84DC24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
