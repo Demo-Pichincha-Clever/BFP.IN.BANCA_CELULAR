@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceSMS.asmx.cs" Class  ="BFP.WebServiceYP.ServiceSMS" %>
