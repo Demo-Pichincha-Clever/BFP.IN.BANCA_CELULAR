@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx?wsdl" docRef="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" xmlns:q1="http://yellowpepper.com/webservices/" binding="q1:metroLineSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" xmlns:q2="http://yellowpepper.com/webservices/" binding="q2:metroLineSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
