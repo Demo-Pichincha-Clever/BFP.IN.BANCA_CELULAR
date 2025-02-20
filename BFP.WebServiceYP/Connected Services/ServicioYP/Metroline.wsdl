@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://yellowpepper.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://yellowpepper.com/webservices/literalTypes" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://yellowpepper.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://yellowpepper.com/webservices/literalTypes">
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="sendShortMessageSoapIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendShortMessageSoapOut">
+    <wsdl:part name="sendShortMessageResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageSoapIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageSoapOut">
+    <wsdl:part name="sendPremiumMessageResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageSoapIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageSoapOut">
+    <wsdl:part name="sendConfirmMessageResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageSoapIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageSoapOut">
+    <wsdl:part name="sendFreeMessageResult" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendShortMessageHttpGetIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendShortMessageHttpGetOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageHttpGetIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageHttpGetOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageHttpGetIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageHttpGetOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageHttpGetIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageHttpGetOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendShortMessageHttpPostIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendShortMessageHttpPostOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageHttpPostIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendPremiumMessageHttpPostOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageHttpPostIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendConfirmMessageHttpPostOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageHttpPostIn">
+    <wsdl:part name="Serial" type="s:string" />
+    <wsdl:part name="Pin" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="Message" type="s:string" />
+    <wsdl:part name="Sender" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sendFreeMessageHttpPostOut">
+    <wsdl:part name="Body" element="s0:string" />
+  </wsdl:message>
+  <wsdl:portType name="metroLineSoap">
+    <wsdl:operation name="sendShortMessage">
+      <wsdl:input message="tns:sendShortMessageSoapIn" />
+      <wsdl:output message="tns:sendShortMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <wsdl:input message="tns:sendPremiumMessageSoapIn" />
+      <wsdl:output message="tns:sendPremiumMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <wsdl:input message="tns:sendConfirmMessageSoapIn" />
+      <wsdl:output message="tns:sendConfirmMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <wsdl:input message="tns:sendFreeMessageSoapIn" />
+      <wsdl:output message="tns:sendFreeMessageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="metroLineHttpGet">
+    <wsdl:operation name="sendShortMessage">
+      <wsdl:input message="tns:sendShortMessageHttpGetIn" />
+      <wsdl:output message="tns:sendShortMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <wsdl:input message="tns:sendPremiumMessageHttpGetIn" />
+      <wsdl:output message="tns:sendPremiumMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <wsdl:input message="tns:sendConfirmMessageHttpGetIn" />
+      <wsdl:output message="tns:sendConfirmMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <wsdl:input message="tns:sendFreeMessageHttpGetIn" />
+      <wsdl:output message="tns:sendFreeMessageHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="metroLineHttpPost">
+    <wsdl:operation name="sendShortMessage">
+      <wsdl:input message="tns:sendShortMessageHttpPostIn" />
+      <wsdl:output message="tns:sendShortMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <wsdl:input message="tns:sendPremiumMessageHttpPostIn" />
+      <wsdl:output message="tns:sendPremiumMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <wsdl:input message="tns:sendConfirmMessageHttpPostIn" />
+      <wsdl:output message="tns:sendConfirmMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <wsdl:input message="tns:sendFreeMessageHttpPostIn" />
+      <wsdl:output message="tns:sendFreeMessageHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="metroLineSoap" type="tns:metroLineSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="sendShortMessage">
+      <soap:operation soapAction="http://yellowpepper.com/webservices/sendShortMessage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <soap:operation soapAction="http://yellowpepper.com/webservices/sendPremiumMessage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <soap:operation soapAction="http://yellowpepper.com/webservices/sendConfirmMessage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <soap:operation soapAction="http://yellowpepper.com/webservices/sendFreeMessage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="metroLineSoap12" type="tns:metroLineSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="sendShortMessage">
+      <soap12:operation soapAction="http://yellowpepper.com/webservices/sendShortMessage" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <soap12:operation soapAction="http://yellowpepper.com/webservices/sendPremiumMessage" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <soap12:operation soapAction="http://yellowpepper.com/webservices/sendConfirmMessage" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <soap12:operation soapAction="http://yellowpepper.com/webservices/sendFreeMessage" style="rpc" />
+      <wsdl:input>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="encoded" namespace="http://yellowpepper.com/webservices/" encodingStyle="http://www.w3.org/2003/05/soap-encoding" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="metroLineHttpGet" type="tns:metroLineHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="sendShortMessage">
+      <http:operation location="/sendShortMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <http:operation location="/sendPremiumMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <http:operation location="/sendConfirmMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <http:operation location="/sendFreeMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="metroLineHttpPost" type="tns:metroLineHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="sendShortMessage">
+      <http:operation location="/sendShortMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendPremiumMessage">
+      <http:operation location="/sendPremiumMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendConfirmMessage">
+      <http:operation location="/sendConfirmMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendFreeMessage">
+      <http:operation location="/sendFreeMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="metroLine">
+    <wsdl:port name="metroLineSoap" binding="tns:metroLineSoap">
+      <soap:address location="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" />
+    </wsdl:port>
+    <wsdl:port name="metroLineSoap12" binding="tns:metroLineSoap12">
+      <soap12:address location="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" />
+    </wsdl:port>
+    <wsdl:port name="metroLineHttpGet" binding="tns:metroLineHttpGet">
+      <http:address location="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" />
+    </wsdl:port>
+    <wsdl:port name="metroLineHttpPost" binding="tns:metroLineHttpPost">
+      <http:address location="https://staging.yellowpepper.com/YellowPepper/PE/WebService/Metroline.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
