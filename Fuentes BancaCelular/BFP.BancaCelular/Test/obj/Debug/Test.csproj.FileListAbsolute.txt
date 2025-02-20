@@ -1,0 +1,12 @@
+D:\Fuentes A  BC\BFP.BancaCelular\Test\bin\Debug\Test.exe.config
+D:\Fuentes A  BC\BFP.BancaCelular\Test\bin\Debug\Test.exe
+D:\Fuentes A  BC\BFP.BancaCelular\Test\bin\Debug\Test.pdb
+D:\Fuentes A  BC\BFP.BancaCelular\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Fuentes A  BC\BFP.BancaCelular\Test\obj\Debug\Test.exe
+D:\Fuentes A  BC\BFP.BancaCelular\Test\obj\Debug\Test.pdb
+D:\BancaCelular\BFP.BancaCelular\Test\bin\Debug\Test.exe.config
+D:\BancaCelular\BFP.BancaCelular\Test\obj\Debug\Test.exe
+D:\BancaCelular\BFP.BancaCelular\Test\obj\Debug\Test.pdb
+D:\BancaCelular\BFP.BancaCelular\Test\bin\Debug\Test.exe
+D:\BancaCelular\BFP.BancaCelular\Test\bin\Debug\Test.pdb
+D:\BancaCelular\BFP.BancaCelular\Test\obj\Debug\ResolveAssemblyReference.cache
