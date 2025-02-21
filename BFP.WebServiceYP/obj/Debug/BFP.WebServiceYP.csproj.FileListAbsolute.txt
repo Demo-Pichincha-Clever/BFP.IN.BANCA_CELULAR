@@ -1,0 +1,11 @@
+D:\Fuentes A  BC\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll
+D:\Fuentes A  BC\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\ResolveAssemblyReference.cache
+D:\Fuentes A  BC\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\BFP.WebServiceYP.dll
+D:\BancaCelular\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll
+D:\BancaCelular\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\ResolveAssemblyReference.cache
+D:\BancaCelular\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\BFP.WebServiceYP.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll.config
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\BFP.WebServiceYP.csproj.CoreCompileInputs.cache
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\BFP.WebServiceYP.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Debug\BFP.WebServiceYP.csprojResolveAssemblyReference.cache
