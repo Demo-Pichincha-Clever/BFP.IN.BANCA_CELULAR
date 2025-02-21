@@ -1,0 +1,6 @@
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll.config
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\bin\BFP.WebServiceYP.XmlSerializers.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Release\BFP.WebServiceYP.csproj.CoreCompileInputs.cache
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Release\BFP.WebServiceYP.dll
+D:\Proyectos\BancaCelular\Harvest\BFP.WinServiceBC\BFP.WebServiceYP\obj\Release\BFP.WebServiceYP.XmlSerializers.dll
