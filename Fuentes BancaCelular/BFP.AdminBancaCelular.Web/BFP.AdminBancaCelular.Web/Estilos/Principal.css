@@ -1,0 +1,169 @@
+﻿.MasterUsuario
+{
+	font-family: Tahoma;
+	font-weight: bold;
+	color: #FFFF00;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: middle;
+	background-color: #000000;
+	padding-right:10px;
+}
+
+.MasterMenu
+{
+	font-family: verdana;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #000000;
+}
+
+.MasterPie
+{
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #5E89CE;
+	text-align: center;
+	vertical-align: middle;
+}
+.PantallaTitulo
+{
+	font-family: tahoma;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	border-left-style: double;
+	border-left-width: 2px;
+	border-left-color: #FFFFFF;
+	border-bottom-style: double;
+	border-bottom-width: 2px;
+	border-bottom-color: #808080;
+	border-right-style: double;
+	border-right-width: 2px;
+	border-right-color: #808080;
+}
+.PantallaBotones
+{
+	font-family: Tahoma;
+	font-size: 10px;
+	background-color: #CCCCCC;
+	vertical-align: middle;
+	text-align: left;
+	border-left-style: double;
+	border-left-width: 2px;
+	border-left-color: #FFFFFF;
+	border-bottom-style: double;
+	border-bottom-width: 2px;
+	border-bottom-color: #808080;
+	border-right-style: double;
+	border-right-width: 2px;
+	border-right-color: #808080;
+}
+.PantallaBotonBarra
+{
+	cursor:pointer;
+}
+.PantallaGrilla
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	background-color:#faeeb0;
+}
+.GrillaSeleccionaRegistro
+{
+	background-color: #DEDC0A;
+}
+
+.MenuIE8
+{
+ z-index:50px;	
+}
+
+.PantallaSubTitulo
+{
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding-left : 15px;
+	padding-top :8px;
+	padding-bottom: 5px;
+	background-color:#faeeb0;
+	text-decoration :underline;
+}
+
+.PantallaDatos
+{
+	background-color:#faeeb0;
+	width : 100%;
+}
+
+.PantallaDatosTituloI
+{
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000000;
+	padding-left : 50px;
+	width : 100px;
+}
+
+.PantallaDatosTituloD
+{
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000000;
+	padding-left : 0px;
+	width : 100px;
+}
+
+.ComboBox
+{
+	font-family: tahoma;
+	font-size: 12px;
+	color: #000000;
+	width : 180px;
+}
+
+.Descripcion
+{
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	padding-left : 30px;
+}
+
+.Boton
+{
+	color: White;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	line-height: normal;
+	text-decoration: none;
+	border: thin double #666666;
+	border-width: 2pt;
+	background-color: #6B696B;
+}
+
+.Campo_Texto
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #666666;
+	height: 16px;
+}
+
+.LoginControl
+{
+	background-color:#F7F7DE; 
+    border-color:#CCCC99;
+    border-style:solid;
+    border-width:1px;
+    font-family:Verdana; 
+    font-size:10px;     
+}
