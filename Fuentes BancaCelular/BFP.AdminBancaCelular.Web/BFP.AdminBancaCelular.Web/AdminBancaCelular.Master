@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminBancaCelular.Master.cs"
+    Inherits="BFP.AdminBancaCelular.Web.AdminBancaCelular" %>
+    
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Banca Celular Administrador</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="./Estilos/Principal.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .modalBackground
+        {
+            background-color: Gray;
+            filter: alpha(opacity=70);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body bgcolor="#cccccc">
+    <form id="form1" runat="server">
+    <div>
+    <asp:ToolkitScriptManager ID="ScriptManager1" ScriptMode ="Release" runat="server" 
+            OnAsyncPostBackError="ScriptManager1_AsyncPostBackError"  EnablePageMethods="true"
+        EnablePartialRendering="true" LoadScriptsBeforeUI="false" AsyncPostBackTimeout="180">
+        <CompositeScript>
+            <Scripts>
+                <asp:ScriptReference Name="MicrosoftAjax.js"  />
+                <asp:ScriptReference name="MicrosoftAjaxWebForms.js"/>
+            </Scripts>
+        </CompositeScript>
+
+            </asp:ToolkitScriptManager>
+
+        <table width="810px" style="height : 585px; background-repeat:no-repeat;" cellpadding="0" cellspacing="0" align="center"
+            border="0" background ="Imagenes/FondoMaster.gif">
+            <tr style ="height :87px">
+                <td colspan="2">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr style ="height :35px">
+                <td class="MasterMenu">
+                    <asp:Menu ID="mnuFinanciero" runat="server" ForeColor="White" Orientation="Horizontal">
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle HorizontalPadding="20px" BackColor="Black" />
+                        <DynamicMenuItemStyle BackColor="Black" ForeColor="white" />
+                        <DynamicHoverStyle BackColor="black" ForeColor="#ECDB03" BorderColor="Lime" BorderStyle="Solid"
+                            BorderWidth="1px" />
+                        <StaticHoverStyle BackColor="Black" ForeColor="#ECDB03" />
+                        <Items>
+                            <asp:MenuItem Text="Administrador" Value="Administrador" NavigateUrl = "~/Inicio.aspx">
+                                <asp:MenuItem NavigateUrl="~/MantenimientoOperaciones.aspx" Text="Mantenimiento Operaciones">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="MasterUsuario" width="40%">
+                    <asp:Label ID="lblUsuario" runat="server" Text=""></asp:Label>
+                </td>
+            </tr>
+            <tr valign="top" style ="height :411px">
+                <td bgcolor="white" colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style ="height:52px">
+                <td class="MasterPie" colspan="2">
+                    Banco Financiero del Perú | División de Tecnología | Derechos Reservados @2011 -
+                    Versión 1.0
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
