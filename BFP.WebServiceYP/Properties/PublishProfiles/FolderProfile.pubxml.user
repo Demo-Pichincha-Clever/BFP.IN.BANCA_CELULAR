@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Proyectos\BancaCelular\BP.BancaCelular.Publicar</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BFP.WebServiceYP.dll">
+      <publishTime>09/07/2018 17:39:41</publishTime>
+    </File>
+    <File Include="bin/BFP.WebServiceYP.XmlSerializers.dll">
+      <publishTime>09/07/2018 17:39:43</publishTime>
+    </File>
+    <File Include="ServiceSMS.asmx">
+      <publishTime>08/22/2011 11:54:19</publishTime>
+    </File>
+    <File Include="Web References/SIXP2/Reference.map">
+      <publishTime>09/07/2018 17:28:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/07/2018 17:33:54</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
